@@ -43,5 +43,6 @@ if prompt:
             try:
                 future.result()
             except Exception as e:
+                st.error(f"An error occurred: {e}")
                 print(f"Error: {e}")
                 traceback.print_exc()
