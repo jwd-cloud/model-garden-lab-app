@@ -4,7 +4,7 @@ from logs import write_log_entry
 from anthropic import AnthropicVertex
 
 project_id = os.environ['GOOGLE_CLOUD_PROJECT']
-region = "us-east5"
+region = os.environ['GOOGLE_CLOUD__CLAUDE_REGION']
 
 client = AnthropicVertex(region=region, project_id=project_id)
 

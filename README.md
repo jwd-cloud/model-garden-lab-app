@@ -19,6 +19,7 @@ To set up and run the application:
    pip install -r requirements.txt
    export GOOGLE_CLOUD_PROJECT=$(gcloud config get-value project)
    export GOOGLE_CLOUD_REGION="us-central1"
+   export GOOGLE_CLOUD_CLAUDE_REGION="us-east5"
       gcloud compute firewall-rules create allow-port-8088-to-this-machine \
     --allow tcp:8088 \
     --source-ranges=0.0.0.0/0 \
